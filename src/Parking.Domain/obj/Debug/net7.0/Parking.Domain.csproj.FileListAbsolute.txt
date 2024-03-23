@@ -1,0 +1,12 @@
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\bin\Debug\net7.0\Parking.Domain.deps.json
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\bin\Debug\net7.0\Parking.Domain.dll
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\bin\Debug\net7.0\Parking.Domain.pdb
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.csproj.AssemblyReference.cache
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.AssemblyInfoInputs.cache
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.AssemblyInfo.cs
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.dll
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\refint\Parking.Domain.dll
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\Parking.Domain.pdb
+C:\Users\adm\source\repos\Parking\src\Parking.Domain\obj\Debug\net7.0\ref\Parking.Domain.dll
