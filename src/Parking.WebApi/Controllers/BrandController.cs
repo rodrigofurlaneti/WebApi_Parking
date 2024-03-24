@@ -18,9 +18,9 @@ namespace Parking.WebApi.Controllers
             this._brandService = brandService;
         }
 
-        [HttpGet(Name = "Get")]
+        [HttpGet(Name = "GetBrand")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<BrandEntity>))]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetBrand()
         {
             try
             {

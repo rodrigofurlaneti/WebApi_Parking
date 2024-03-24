@@ -17,7 +17,7 @@ namespace Parking.Infrastructure.Repository.Brand
                 _commandText = "USP_Parking_Brand_Delete";
                 SqlConnection sqlConnection = new SqlConnection(_connectionString);
                 SqlCommand sqlCommand = new SqlCommand(_commandText, sqlConnection);
-                GetSqlCommandVehicleBrandModelDelete(sqlCommand, id);
+                GetBrandDelete(sqlCommand, id);
                 sqlConnection.Open();
                 sqlCommand.CommandType = CommandType.StoredProcedure;
                 sqlCommand.ExecuteNonQuery();
@@ -40,7 +40,7 @@ namespace Parking.Infrastructure.Repository.Brand
                 _commandText = "USP_Parking_Brand_Delete";
                 SqlConnection sqlConnection = new SqlConnection(_connectionString);
                 SqlCommand sqlCommand = new SqlCommand(_commandText, sqlConnection);
-                GetSqlCommandVehicleBrandModelDelete(sqlCommand, id);
+                GetBrandDelete(sqlCommand, id);
                 sqlConnection.Open();
                 sqlCommand.CommandType = CommandType.StoredProcedure;
                 await sqlCommand.ExecuteNonQueryAsync();
@@ -298,14 +298,14 @@ namespace Parking.Infrastructure.Repository.Brand
         private static void GetBrandUpdate(SqlCommand sqlCommand, BrandEntity entity)
         {
             sqlCommand.Parameters.AddWithValue("@Id", entity.Id);
-            sqlCommand.Parameters.AddWithValue("@IdUser", entity.Id);
+            sqlCommand.Parameters.AddWithValue("@IdUser", entity.IdUser);
             sqlCommand.Parameters.AddWithValue("@Name", entity.Name);
             sqlCommand.Parameters.AddWithValue("@Status", entity.Status);
             sqlCommand.Parameters.AddWithValue("@DateInsert", entity.DateInsert);
             sqlCommand.Parameters.AddWithValue("@DateUpdate", entity.DateUpdate);
         }
 
-        private static void GetSqlCommandVehicleBrandModelDelete(SqlCommand sqlCommand, int id)
+        private static void GetBrandDelete(SqlCommand sqlCommand, int id)
         {
             sqlCommand.Parameters.AddWithValue("@Id", id);
         }

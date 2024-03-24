@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Parking.Domain\Parking.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\User\" />
+  </ItemGroup>
+
 </Project>
