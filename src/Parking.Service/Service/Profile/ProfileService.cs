@@ -8,15 +8,15 @@ namespace Parking.Service.Service.Profile
     {
         #region Property
 
-        public readonly IProfileRepository _brandRepository;
+        public readonly IProfileRepository _profileRepository;
 
 
         #endregion
 
         #region Constructor
 
-        public ProfileService(ILogger logger, IProfileRepository brandRepository) : base(logger) {
-            _brandRepository = brandRepository;
+        public ProfileService(ILogger logger, IProfileRepository profileRepository) : base(logger) {
+            _profileRepository = profileRepository;
         }
 
         #endregion
@@ -28,7 +28,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_Delete");
-                _brandRepository.Delete(id);
+                _profileRepository.Delete(id);
                 this._logger.TraceExit("Service_Profile_Delete");
             }
             catch (ArgumentNullException ex)
@@ -44,7 +44,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_DeleteAsync");
-                await _brandRepository.DeleteAsync(id);
+                await _profileRepository.DeleteAsync(id);
                 this._logger.TraceExit("Service_Profile_DeleteAsync");
             }
             catch (ArgumentNullException ex)
@@ -60,7 +60,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_Get");
-                var ret = _brandRepository.Get();
+                var ret = _profileRepository.Get();
                 this._logger.TraceExit("Service_Profile_Get");
                 return ret;
             }
@@ -77,7 +77,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_GetAsync");
-                var ret = await _brandRepository.GetAsync();
+                var ret = await _profileRepository.GetAsync();
                 this._logger.TraceExit("Service_Profile_GetAsync");
                 return ret;
             }
@@ -94,7 +94,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_GetById");
-                var ret = _brandRepository.GetById(id);
+                var ret = _profileRepository.GetById(id);
                 this._logger.TraceExit("Service_Profile_GetById");
                 return ret;
             }
@@ -111,7 +111,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_GetByIdAsync");
-                var ret = await _brandRepository.GetByIdAsync(id);
+                var ret = await _profileRepository.GetByIdAsync(id);
                 this._logger.TraceExit("Service_Profile_GetByIdAsync");
                 return ret;
             }
@@ -128,7 +128,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_Post");
-                _brandRepository.Post(entity);
+                _profileRepository.Post(entity);
                 this._logger.TraceExit("Service_Profile_Post");
             }
             catch (ArgumentNullException ex)
@@ -144,7 +144,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_PostAsync");
-                await _brandRepository.PostAsync(entity);
+                await _profileRepository.PostAsync(entity);
                 this._logger.TraceExit("Service_Profile_PostAsync");
             }
             catch (ArgumentNullException ex)
@@ -160,7 +160,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_Put");
-                _brandRepository.Put(entity);
+                _profileRepository.Put(entity);
                 this._logger.TraceExit("Service_Profile_Put");
             }
             catch (ArgumentNullException ex)
@@ -176,7 +176,7 @@ namespace Parking.Service.Service.Profile
             try
             {
                 this._logger.TraceEntry("Service_Profile_PutAsync");
-                await _brandRepository.PutAsync(entity);
+                await _profileRepository.PutAsync(entity);
                 this._logger.TraceExit("Service_Profile_PutAsync");
             }
             catch (ArgumentNullException ex)

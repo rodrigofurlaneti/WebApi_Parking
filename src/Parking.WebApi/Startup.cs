@@ -4,11 +4,13 @@ using Parking.Infrastructure.Repository.Color;
 using Parking.Infrastructure.Repository.Model;
 using Parking.Infrastructure.Repository.Profile;
 using Parking.Infrastructure.Repository.Type;
+using Parking.Infrastructure.Repository.User;
 using Parking.Service.Service.Brand;
 using Parking.Service.Service.Color;
 using Parking.Service.Service.Model;
 using Parking.Service.Service.Profile;
 using Parking.Service.Service.Type;
+using Parking.Service.Service.User;
 
 namespace Parking.WebApi
 {
@@ -53,6 +55,10 @@ namespace Parking.WebApi
             services.AddScoped<IProfileRepository, ProfileRepository>();
 
             services.AddScoped<IProfileService, ProfileService>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<IUserService, UserService>();
 
             services.AddControllers();
 
